@@ -1,0 +1,13 @@
+application: backbone-chat
+version: 1
+runtime: go
+api_version: go1
+
+handlers:
+- url: /
+  static_files: views/index.html
+  upload: views/index.html
+
+- url: /assets
+  static_dir: assets
+

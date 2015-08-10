@@ -1,0 +1,41 @@
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Backbone</title>
+
+  <link href='http://fonts.googleapis.com/css?family=Raleway:600,400' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+<ul id="messages" class="list-unstyled"></ul>
+
+<div id="new-message-form">
+  <form class="form form-inline">
+    <input type="text" placeholder="Type a message & Press return to send" name="body" autofocus autocomplete="off">
+    <button type="reset" class="hidden"></button>
+  </form>
+</div>
+
+
+<script type="text/template" id="messageTmpl">
+  <img src="<%= avatar %>">
+  <p><%= body %></p>
+  <small class="text-muted"><%= createdAt %></small>
+</script>
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.7.0/underscore.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/backbone.js/1.1.2/backbone.js"></script>
+<script src="https://cdn.firebase.com/js/client/2.0.3/firebase.js"></script>
+<script src="https://cdn.firebase.com/libs/backbonefire/0.5.1/backbonefire.js"></script>
+
+<script src="assets/js/vendor/moment.js"></script>
+
+<script src="assets/js/messages.js"></script>
+<script src="assets/js/script.js"></script>
+
+</body>
+</html>
